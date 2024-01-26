@@ -172,7 +172,7 @@ cardapio.metodos = {
     carregarEtapa: (etapa) => {
 
         if (etapa == 1) {
-            $("#lblTituloEtapa").text('Seu carrinho');
+            $("#lblTituloEtapa").text('Seu carrinho:');
             $("#itensCarrinho").removeClass('hidden');
             $("#localEntrega").addClass('hidden');
             $("#resumoCarrinho").addClass('hidden');
@@ -188,7 +188,7 @@ cardapio.metodos = {
 
 
         } if (etapa == 2) {
-            $("#lblTituloEtapa").text('Endereço entrega');
+            $("#lblTituloEtapa").text('Endereço de entrega:');
             $("#itensCarrinho").addClass('hidden');
             $("#localEntrega").removeClass('hidden');
             $("#resumoCarrinho").addClass('hidden');
@@ -203,7 +203,7 @@ cardapio.metodos = {
             $("#btnVoltar").removeClass('hidden');
             
         } if (etapa == 3) {
-            $("#lblTituloEtapa").text('Resumo do pedido');
+            $("#lblTituloEtapa").text('Resumo do pedido:');
             $("#itensCarrinho").addClass('hidden');
             $("#localEntrega").addClass('hidden');
             $("#resumoCarrinho").removeClass('hidden');
@@ -214,7 +214,7 @@ cardapio.metodos = {
             $(".etapa3").addClass('active');
 
             $("#btnEtapaPedido").addClass('hidden');
-            $("#btnEtapaEndereco").removeClass('hidden');
+            $("#btnEtapaEndereco").addClass('hidden');
             $("#btnEtapaResumo").removeClass('hidden');
             $("#btnVoltar").removeClass('hidden');
         }

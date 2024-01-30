@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'PoppinsMedium';
-    src: url('..//fonts/Poppins-Medium.otf');
+    src: url('../fonts/Poppins-Medium.otf');
 }
 
 @font-face {
     font-family: 'PoppinsRegular';
-    src: url('..//fonts/Poppins-Regular.otf');
+    src: url('../fonts/Poppins-Regular.otf');
 }
 
 :root {
@@ -19,18 +19,18 @@
     --color-white: #ffffff;
     --color-red: #e74c3c;
     --color-green: #2ecc71;
-    --color-separete: #cccccc;
+    --color-separate: #cccccc;
 }
 
+
 html, body {
-    font-family: 'PoppinsRegular', 'Rubik', 'sans-serif';
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
     background-color: var(--color-background);
     color: var(--color-text);
-
 }
 
 b {
-    font-family: 'PoppinsMedium', 'Rubik', 'sans-serif';
+    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
 }
 
 .hidden {
@@ -57,7 +57,7 @@ a.navbar-brand {
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
-    box-shadow: 0px, 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .btn-white.active, .btn-white:hover {
@@ -110,7 +110,7 @@ a.navbar-brand {
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .btn-icon-left {
@@ -162,7 +162,7 @@ a.navbar-brand {
     border-radius: 20px;
     padding: 15px 20px;
     font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)!important;
     border: none!important;
 }
 
@@ -201,11 +201,12 @@ a.navbar-brand {
     margin-bottom: 30px;
 }
 
-.card-icon {
+.card-icon {   
     height: 150px;
     margin: 0 auto;
     margin-bottom: 30px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -220,7 +221,6 @@ a.navbar-brand {
     color: var(--color-black);
     margin-bottom: 10px;
 }
-
 
 .background-servicos {
     position: absolute;
@@ -376,17 +376,17 @@ a.navbar-brand {
 
 #depoimento-1 .imagem-depoimento {
     background-image: url(../img/diego.jpg);
-    background-size: cover; 
+    background-size: cover;
 }
 
 #depoimento-2 .imagem-depoimento {
     background-image: url(../img/ana.jpg);
-    background-size: cover; 
+    background-size: cover;
 }
 
 #depoimento-3 .imagem-depoimento {
     background-image: url(../img/joao.jpg);
-    background-size: cover; 
+    background-size: cover;
 }
 
 .nome-depoimento {
@@ -483,7 +483,7 @@ footer {
     left: 0;
     right: 0;
     padding: 50px;
-    background-color: var(--color-white);
+    background: var(--color-white);
     z-index: 9990;
     overflow-x: hidden;
     overflow-y: auto;
@@ -501,7 +501,7 @@ footer {
     overflow-x: hidden;
 }
 
-.m-body::-webkit-scrollbar{
+.m-body::-webkit-scrollbar {
     width: 6px;
     background: transparent;
 }
@@ -523,7 +523,7 @@ footer {
     height: 35px;
     background-color: var(--color-white);
     border-radius: 50px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     color: var(--color-black);
     display: flex;
     justify-content: center;
@@ -534,7 +534,7 @@ footer {
 .etapa::before {
     content: '';
     width: 20px;
-    background-color: var(--color-separete);
+    background-color: var(--color-separate);
     position: absolute;
     height: 2px;
     margin-left: 55px;
@@ -544,7 +544,7 @@ footer {
     content: none;
 }
 
-.etapa.active, .etapa.active::before {
+.etapa.active, .etapa.active::before  {
     background-color: var(--color-primary);
 }
 
@@ -559,7 +559,7 @@ footer {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--color-separete);
+    border-bottom: 1px solid var(--color-separate);
 }
 
 .modal-full .item-carrinho:last-child {
@@ -612,11 +612,11 @@ footer {
 
 .container-total {
     padding-top: 20px;
-    border-top: 1px solid var(--color-separete);
+    border-top: 1px solid var(--color-separate);
 }
 
 .container-total .texto-entrega {
-    color: var(--color-separete);
+    color: var(--color-separate);
 }
 
 .container-total .texto-total {
@@ -636,7 +636,7 @@ footer {
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)!important;
     border: none!important;
 }
 
@@ -654,7 +654,7 @@ select.form-control {
     top: 38px;
 }
 
-.img-produto-resumo img{
+.img-produto-resumo img {
     width: 50px;
     border-radius: 11px;
 }
@@ -732,7 +732,7 @@ select.form-control {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     color: var(--color-black-heavy)!important;
     border-radius: 50px;
     cursor: pointer;
@@ -743,7 +743,7 @@ select.form-control {
     position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .toast {

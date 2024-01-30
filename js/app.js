@@ -9,7 +9,6 @@ var MEU_CARRINHO = [];
 var MEU_ENDERECO = null;
 
 var VALOR_CARRINHO = 0;
-
 var VALOR_ENTREGA = 5;
 
 cardapio.eventos = {
@@ -450,6 +449,7 @@ cardapio.metodos = {
         }
 
         cardapio.metodos.carregarEtapa(3);
+        cardapio.metodos.carregarResumo();
 
     },
 

@@ -18,9 +18,9 @@ cardapio.eventos = {
     init: () => {
         cardapio.metodos.obterItensCardapio();
         cardapio.metodos.carregarBotaoLigar();
+        cardapio.metodos.carregarBotaoWhatsApp();
         cardapio.metodos.carregarBotaoReserva();
-
-
+        cardapio.metodos.AbrirWhatsFoter();
     }
 }
 
@@ -547,6 +547,28 @@ cardapio.metodos = {
         $("#btnDepoimento-" + depoimento).addClass('active');
     },
 
+    // carrega o botão do whatsApp do estabelecimento.
+    carregarBotaoWhatsApp: () => {
+
+        var texto = '*Olá gostaria de fazer um pedido* ';
+
+        let encode = encodeURI(texto);
+        let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
+
+        $("#btnAbrirWhats").attr('href', URL);
+    },
+
+    
+    AbrirWhatsFoter: () => {
+
+        var texto = '*Olá você já será atendido...* O que deseja pedir?';
+
+        let encode = encodeURI(texto);
+        let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
+
+        $("#btnAbrirWhatsFooter").attr('href', URL);
+
+    },
 
 
 
